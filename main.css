@@ -1,0 +1,93 @@
+/*universal selector*/
+*{
+    margin: 0;
+    padding: 0;
+    color: #333;
+    
+}
+
+
+body{
+    background-color: #FFCAB1;
+}
+
+
+/*class selector*/
+.wrapper{
+    width: 80vw;
+    margin: 0 auto;
+    background-color: #FFCAB1;
+    text-align: center;
+    border: #69A2B0 solid 5px;
+}
+
+/*grouping/list selector*/
+h1,
+h2,
+h3{
+    padding: 1em;
+    text-decoration: underline;
+}
+
+/*element selector*/
+.wrapper > header{
+    width: 90%;
+    height: 25vh;
+    margin: 0 auto;
+    background-color: #c2e1c2;
+    background-image: url("assets/pexels-james-wheeler-1519088.webp");
+    background-position: center;
+}
+
+header > h1{
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.wrapper > main{
+    background-color: #80ab82;
+    margin: 10px auto;
+    width: 90%;
+}
+
+main > section > img{
+    max-width: 95%;
+    height: auto;
+    filter: grayscale(100%);
+    border-radius: 45%;
+    transition: 450ms;
+}
+
+main > section > img:hover{
+    animation: alternate;
+    filter: grayscale(0%);
+    border-radius: unset;
+    transition: 1000ms;
+}
+
+p{
+    color: #fff;
+    padding: 1em;
+}
+
+ul li{
+    list-style: none;
+    padding: 0.5em;
+}
+
+.wrapper > footer{
+    background-color: #778472;
+    background-position: center;
+    padding: 1.5em 0;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*pseudo-class selector*/
+ul li:nth-child(odd){
+    font-weight: bold;
+}
